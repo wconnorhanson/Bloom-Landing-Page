@@ -21,7 +21,7 @@
 /* temps */
 
 .sec1-box {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* tag */
@@ -40,11 +40,21 @@ body {
 .container {
     margin: 0 auto;
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .clear {
     clear: both;
+}
+
+.product {
+    margin-right: 300px;
+    margin-bottom: 25px;
+    background-color: var(--icon);
+    border: 5px solid var(--iconb);
+    height: 100px;
+    width: 200px;
+    float: left;
 }
 
 .sec1-box {
@@ -71,7 +81,7 @@ body {
     width: calc(100%/3);
     padding: 20px;
     padding-bottom: 20px;
-    color: #666;
+    color: #aaa;
     border-bottom: 10px solid var(--border)
     ;
 }
@@ -84,7 +94,6 @@ body {
 .social-list {
     list-style: none;
     float: inline-end;
-    padding-top: 30px;
 }
 
 .visually-hidden {
@@ -93,8 +102,17 @@ body {
 
 /* id */
 
+#botSocialNav {
+    border: 1px solid yellowgreen;
+    height: 20px;
+    width: 25%;
+    float: right ;
+    margin-bottom: 50px;
+}
+
 #footer {
     background-color: var(--prim);
+    color: var(--tert);
     padding-bottom: 20px;
 }
 
@@ -108,12 +126,12 @@ body {
 }
 
 #productsBox, #reviewsBox {
-    float: left
+    float: left;
 }
 
 #productsBox {
     width: calc((100% / 3) * 2);
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #reviewsBox {
@@ -137,4 +155,8 @@ body {
 #topHead {
     font-family: var(--font);
     float: inline-start;
+}
+
+#topSocialNav {
+    padding-top: 30px;
 }
