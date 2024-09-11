@@ -32,22 +32,49 @@ body {
     font-weight: 900;
 }
 
-.box1-text {
-    position: absolute;
-}
-
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     width: 90%;
 }
 
+.footer {
+    height: 100px;
+    width: 100%;
+}
+
+.footer-content {
+    position: absolute;
+    top: 5px;
+    height: 20px;
+    width: 50%;
+}
+
+/* .footer-social {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    height: 10px;
+    width: 50%;
+} */
+
 .product {
-    margin: 20px;
+    position: absolute;
+    margin: 0 40px 20px 0;
     background-color: var(--icon);
     border: 5px solid var(--iconb);
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 300px;
+}
+
+.products {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.row {
+    position: relative;
 }
 
 .sec1-btn {
@@ -56,18 +83,19 @@ body {
     border-top: 2px solid #777;
     border-radius: 5px;
     padding: 10px;
-    display: block;
     margin-right: 50px;
     margin-top: 20px;
 }
 
 .sec2-box {
+    position: absolute;
     width: calc(100%/3);
+    height: 300px;
     padding: 20px;
     padding-bottom: 20px;
-    color: #666;
-    border-bottom: 10px solid var(--border)
-    ;
+    color: #777;
+    border-bottom: 10px solid var(--border);
+    /* border: 1px solid teal; */
 }
 
 .social-item {
@@ -77,7 +105,6 @@ body {
 
 .social-list {
     list-style: none;
-    float: inline-end;
 }
 
 .visually-hidden {
@@ -88,9 +115,11 @@ body {
 
 #botSocialNav {
     /* border: 1px solid yellowgreen; */
+    position: absolute;
+    right: 5px;
+    top: 5px;
     height: 20px;
     width: 25%;
-    float: right ;
     margin-bottom: 50px;
 }
 
@@ -101,7 +130,6 @@ body {
 }
 
 #header {
-    position: relative;
     padding: 20px 0;
     width: 100%;
     background-color: var(--prim);
@@ -110,37 +138,89 @@ body {
     width: 100%;
 }
 
+#product1 {
+    /* left: 200px; */
+}
+
+#product2 {
+    left: 375px;
+}
+
+#product3 {
+    top: 225px;
+    /* left: 200px; */
+}
+
+#product4 {
+    top: 225px;
+    left: 375px;
+}
+
 #productsBox {
+    position: absolute;
     width: calc((100% / 3) * 2);
+    height: 400px;
     /* border: 1px solid green; */
 }
 
 #reviewsBox {
+    position: absolute;
+    right: 0;
     width: calc(100% / 3);
+    height: 200px;
     padding: 20px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+#row3 {
+    height: 300px;
 }
 
 #section1 {
     background-image: var(--grad);
     width: 100%;
-}
-
-#sec1Box1 {
-    position: relative;
-    left: 5px;
-}
-
-#sec1Box2 {
-    position: relative;
-    
-}
-
-#section2 {
-    background-color: var(--tert);
+    margin: 0 auto;
+    height: 300px;
 }
 
 #sec1Box1 {
     padding: 30px;
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 300px;
+    left: 0px;
+    color: var(--tert);
+}
+
+#sec1Box2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 300px;
+}
+
+#section2 {
+    background-color: var(--tert);
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+}
+
+#sec2Box2 {
+    left: calc(100% / 3);
+}
+
+#sec2Box3 {
+    right: 0;
+}
+
+#section3 {
+    height: 500px;
+    width: 100%;
 }
 
 #topHead {
@@ -151,7 +231,7 @@ body {
 #topSocialNav {
     text-align: center;
     right: 30px;
-    top: 10px;
+    bottom: 10px;
     position: absolute;
     padding-top: 30px;
 }
