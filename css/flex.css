@@ -4,11 +4,16 @@
     --prim: #26292e;
     --sec: #e7718b;
     --tert: #f4f4f6;
-    --grad: #ec8da1;
-    --border: #f9e2ea;
+    --grad: radial-gradient(
+        at top center,
+        #ec8da1,
+        #e7718b
+    );
+    --border: #f0d0db;
     --btn: #2c2a2b;
     --icon: #414141;
     --iconb: #b8c4d4;
+    --font: "Playwrite CU", system-ui;
 }
 
 * {box-sizing: border-box;}
@@ -22,7 +27,131 @@ body {
 
 /* class */
 
+.bold {
+    font-weight: 900;
+}
 
+.container {
+    /* border: 1px solid limegreen; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content, .footer-social {
+    width: 50%;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.header {
+    background-color: var(--prim)
+}
+
+.product {
+    background-color: var(--icon);
+    border: 5px solid var(--iconb);
+    height: 150px;
+    width: 300px;
+}
+
+.products {
+    /* border: 1px solid palevioletred; */
+    height: 400px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.sec1-btn {
+    color: var(--tert);
+    background-color: var(--btn);
+    text-align: center;
+    border-top: 2px solid #777;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.sec2-box {
+    width: calc(100% / 3);
+    padding: 20px;
+    border-bottom: 10px solid var(--border);
+}
+
+.sec2-text {
+    color: #aaa;
+}
+
+.sec3-text {
+    color: #aaa;
+    padding: 10px;
+}
+
+.social-item {
+    list-style-type: none;
+    display: inline;
+    padding-left: 10px;
+}
 
 /* id */
 
+#footer {
+    background-color: var(--prim);
+    color: var(--tert);
+}
+
+#productsBox {
+    width: calc((100% / 3) * 2);
+    height: 500px;
+    /* border: 1px solid green; */
+}
+
+#reviewsBox {
+    right: 0;
+    width: calc(100% / 3);
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+#row1, #row2, #row3, #row4, #row5 {
+    display: flex;
+}
+
+#section1 {
+    background-image: var(--grad);
+}
+
+#sec1Box1 {
+    /* border: 1px solid red; */
+    width: 50%;
+    padding: 10px;
+    color: var(--tert);
+}
+
+#sec1Box2 {
+    /* border: 1px solid red; */
+}
+
+#topSocialNav {
+    /* border: 1px solid yellow; */
+    width: 50%;
+    text-align: right;
+    margin: 22px;
+    padding: 7px;
+}
+
+#topHead {
+    /* border: 1px solid blue; */
+    width: 50%;
+    color: var(--tert);
+    font-family: var(--font);
+}
